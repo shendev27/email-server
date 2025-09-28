@@ -22,7 +22,7 @@ app.post("/send-email", async (req, res) => {
         const { to, subject, message } = req.body;
 
         await transporter.sendMail({
-            from: `"TutorLink" <${process.env.EMAIL_USER}>`,
+            from: `"Mentory" <${process.env.EMAIL_USER}>`,
             to,
             subject,
             text: message
